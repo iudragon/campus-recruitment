@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".DetailActivity">
+
+        <include
+            android:id="@+id/details1"
+            layout="@layout/custom_toolbar" />
+
+
+        <LinearLayout
+            android:id="@+id/part2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/details1"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <EditText
+                    android:id="@+id/edit_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/outline"
+                    android:hint="First Name"
+                    android:fontFamily="@font/actor"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/edit_last"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/outline"
+                    android:hint="Last Name"
+                    android:fontFamily="@font/actor"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/edit_usn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/outline"
+                android:hint="University Number"
+                android:fontFamily="@font/actor"
+                android:inputType="text"
+                android:padding="15dp"
+                android:textColor="@color/colorPrimary" />
+
+            <AutoCompleteTextView
+                android:id="@+id/edit_branch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/outline"
+                android:hint="Choose Your Branch"
+                android:fontFamily="@font/actor"
+                android:inputType="text"
+                android:padding="15dp"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/edit_linkedin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/outline"
+                android:hint="Linked In ID"
+                android:fontFamily="@font/actor"
+                android:padding="15dp"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/edit_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/outline"
+                android:gravity="top"
+                android:hint="Year of Passout"
+                android:fontFamily="@font/actor"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/part2"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/actor"
+                android:text="Key Skills"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <AutoCompleteTextView
+                    android:id="@+id/edit_skillone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/outline"
+                    android:gravity="center"
+                    android:hint="Skill 1"
+                    android:fontFamily="@font/actor"
+                    android:padding="15dp"
+                    android:textColor="@color/colorPrimary" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/edit_skilltwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/outline"
+                    android:gravity="center"
+                    android:hint="Skill 2"
+                    android:fontFamily="@font/actor"
+                    android:padding="15dp"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <AutoCompleteTextView
+                    android:id="@+id/edit_skillthree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/outline"
+                    android:gravity="center"
+                    android:hint="Skill 3"
+                    android:fontFamily="@font/actor"
+                    android:padding="15dp"
+                    android:textColor="@color/colorPrimary" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/edit_skillfour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/outline"
+                    android:gravity="center"
+                    android:hint="Skill 4"
+                    android:fontFamily="@font/actor"
+                    android:padding="15dp"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <AutoCompleteTextView
+                    android:id="@+id/edit_skillfive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/outline"
+                    android:gravity="center"
+                    android:hint="Skill 5"
+                    android:fontFamily="@font/actor"
+                    android:padding="15dp"
+                    android:textColor="@color/colorPrimary" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/edit_skillsix"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/outline"
+                    android:gravity="center"
+                    android:hint="Skill 6"
+                    android:fontFamily="@font/actor"
+                    android:padding="15dp"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edit_be"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/outline"
+                android:hint="B.E Aggregate"
+                android:inputType="text"
+                android:maxLength="2"
+                android:padding="15dp"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/edit_puc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/outline"
+                android:hint="12th/PUC Percentage"
+                android:inputType="text"
+                android:maxLength="2"
+                android:padding="15dp"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/edit_sslc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/outline"
+                android:hint="SSLC Percentage"
+                android:inputType="text"
+                android:maxLength="2"
+                android:padding="15dp"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/edit_backs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/outline"
+                android:hint="Number of backlogs at present"
+                android:inputType="text"
+                android:maxLength="2"
+                android:padding="15dp"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/edit_interns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/outline"
+                android:hint="Number of internships"
+                android:inputType="text"
+                android:maxLength="1"
+                android:padding="15dp"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/edit_apti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/outline"
+                android:hint="How good are you at aptitude [1 - 10]"
+                android:inputType="text"
+                android:maxLength="1"
+                android:padding="15dp"
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/edit_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/btn_bg"
+                android:textStyle="bold"
+                android:text="SUBMIT"
+                android:fontFamily="@font/actor"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="password_forgot">Please visit your registered gmail account "\n"after clicking the button for further steps.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="designation">Software Engineer</string>
+    <string name="note">Note : You cannot use our app until you have verified your Email ID. So verify your email ID and Login again. Please Log Out if already done.</string>
+    <string name="rule">We have sent an verification mail to your registered Email. Please follow the steps mentioned in the mail.</string>
+
+    <string-array name="skills">
+        <item>C | C++</item>
+        <item>C# AND Dot Net</item>
+        <item>Core Java</item>
+        <item>HTML</item>
+        <item>CSS</item>
+        <item>JavaScript</item>
+        <item>Python</item>
+        <item>Node JS</item>
+        <item>ANDROID</item>
+        <item>ANGULAR JS</item>
+        <item>REACT JS</item>
+        <item>J QUERY</item>
+        <item>UI DESIGN</item>
+        <item>RUBY</item>
+        <item>XML</item>
+    </string-array>
+
+    <string-array name="branches">
+        <item>CSE</item>
+        <item>CIVIL</item>
+        <item>MECH</item>
+        <item>EEE</item>
+        <item>ECE</item>
+    </string-array>
+
+    <string-array name="salary">
+        <item>Select Salary Range</item>
+        <item>0.00 lpa - 1.00 lpa</item>
+        <item>1.00 lpa - 2.00 lpa</item>
+        <item>2.00 lpa - 3.00 lpa</item>
+        <item>3.00 lpa - 4.00 lpa</item>
+        <item>4.00 lpa - 5.00 lpa</item>
+        <item>5.00 lpa - 6.00 lpa</item>
+        <item>6.00 lpa - 7.00 lpa</item>
+        <item>Above 8.00 lpa</item>
+    </string-array>
+</resources>

@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment"
+    android:background="#FFF9F9F9">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rl2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/prof_image"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/defp" />
+
+                    <LinearLayout
+                        android:id="@+id/line1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/prof_image"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/rname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sharath"
+                            android:fontFamily="@font/actor"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/rnamet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:text="Babu"
+                            android:fontFamily="@font/actor"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            <TextView
+                android:id="@+id/rt7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl2"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/actor"
+                android:text="Personal Information"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="Your entered details will be displayed here"
+                android:fontFamily="@font/actor"
+                android:layout_below="@+id/rt7"
+                android:id="@+id/rt8"/>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rt8"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                app:cardBackgroundColor="@android:color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/rt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:fontFamily="@font/actor"
+                        android:text="Email Id" />
+
+                    <View
+                        android:id="@+id/viewss1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@+id/rt1"
+                        android:layout_marginBottom="5dp"
+                        android:background="#c2c2c2" />
+
+                    <TextView
+                        android:id="@+id/user_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/viewss1"
+                        android:fontFamily="@font/actor"
+                        android:text="gvsharathbabu@gmail.com"
+                        android:layout_margin="15dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignTop="@+id/user_email"
+                        android:layout_marginEnd="20dp"
+                        android:src="@drawable/ic_verified_user_black_24dp" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cv4"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                app:cardBackgroundColor="@android:color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/rt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:fontFamily="@font/actor"
+                        android:text="University Serial Number" />
+
+                    <View
+                        android:id="@+id/viewss2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@+id/rt2"
+                        android:layout_marginBottom="5dp"
+                        android:background="#c2c2c2" />
+
+                    <TextView
+                        android:id="@+id/ret_usn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/viewss2"
+                        android:text="1KG14CS103"
+                        android:layout_margin="15dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp"  />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cv5"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                app:cardBackgroundColor="@android:color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/rt3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:fontFamily="@font/actor"
+                        android:text="Department" />
+
+                    <View
+                        android:id="@+id/viewss3"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@+id/rt3"
+                        android:layout_marginBottom="5dp"
+                        android:background="#c2c2c2" />
+
+                    <TextView
+                        android:id="@+id/ret_branch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/viewss3"
+                        android:fontFamily="@font/actor"
+                        android:text="Department of CSE"
+                        android:layout_margin="15dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp"/>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cv6"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                app:cardBackgroundColor="@android:color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/rt4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:fontFamily="@font/actor"
+                        android:text="Percentage" />
+
+                    <View
+                        android:id="@+id/viewss4"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@+id/rt4"
+                        android:layout_marginBottom="5dp"
+                        android:background="#c2c2c2" />
+
+                    <TextView
+                        android:id="@+id/profs"
+                        android:layout_below="@+id/viewss4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="SSLC"
+                        android:fontFamily="@font/actor"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/profsp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/prof_sslc"
+                        android:layout_alignTop="@+id/profs"
+                        android:text="89%" />
+
+                    <ProgressBar
+                        android:id="@+id/prof_sslc"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_below="@+id/profs"
+                        android:layout_margin="15dp"
+                        android:progress="89"
+                        android:progressTint="@color/colorPrimary" />
+
+                    <View
+                        android:id="@+id/viewss5"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@+id/prof_sslc"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="#c2c2c2" />
+
+                    <TextView
+                        android:id="@+id/profp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/viewss5"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="PUC"
+                        android:fontFamily="@font/actor"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/profpp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/profsp"
+                        android:layout_alignTop="@+id/profp"
+                        android:text="79%" />
+
+                    <ProgressBar
+                        android:id="@+id/prof_puc"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_below="@+id/profp"
+                        android:layout_margin="15dp"
+                        android:progress="79"
+                        android:progressTint="@color/colorPrimary" />
+
+                    <View
+                        android:id="@+id/viewss6"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@+id/prof_puc"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="#c2c2c2" />
+
+                    <TextView
+                        android:id="@+id/profd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/viewss6"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Degree"
+                        android:fontFamily="@font/actor"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/profdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/profsp"
+                        android:layout_alignTop="@+id/profd"
+                        android:text="69%" />
+
+                    <ProgressBar
+                        android:id="@+id/prof_degree"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_below="@+id/profd"
+                        android:layout_margin="15dp"
+                        android:progress="69"
+                        android:progressTint="@color/colorPrimary" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cv7"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                app:cardBackgroundColor="@android:color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/rt5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:fontFamily="@font/actor"
+                        android:text="Linkedin Account" />
+
+                    <View
+                        android:id="@+id/viewss7"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@+id/rt5"
+                        android:layout_marginBottom="5dp"
+                        android:background="#c2c2c2" />
+
+                    <TextView
+                        android:id="@+id/ret_lid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/viewss7"
+                        android:text="linked.com/sharathbabugv"
+                        android:fontFamily="@font/actor"
+                        android:layout_margin="15dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cv8"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                app:cardBackgroundColor="@android:color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/rt6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:fontFamily="@font/actor"
+                        android:text="Chances of getting placed" />
+
+                    <View
+                        android:id="@+id/viewss8"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@+id/rt6"
+                        android:layout_marginBottom="5dp"
+                        android:background="#c2c2c2" />
+
+
+                    <TextView
+                        android:id="@+id/rpredict"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@id/viewss8"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="40%"/>
+
+                    <ProgressBar
+                        android:id="@+id/prof_prog"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_below="@+id/rpredict"
+                        android:layout_margin="15dp"
+                        android:progress="40"
+                        android:progressTint="@color/colorPrimary" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/prof_prog"
+                        android:gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/actor"
+                            android:text="Chances of getting recruited is calculated." />
+
+                        <TextView
+                            android:id="@+id/update_pre"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="2dp"
+                            android:text="Update"
+                            android:fontFamily="@font/actor"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cv9"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            app:cardBackgroundColor="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/rt9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:fontFamily="@font/actor"
+                android:text="Technical Skills" />
+
+            <View
+                android:id="@+id/viewss9"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/rt9"
+                android:layout_marginBottom="5dp"
+                android:background="#c2c2c2" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewss9">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/ret_sone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/outline"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textSize="13sp"
+                android:visibility="gone"
+                android:textColor="@color/colorPrimary"/>
+
+
+                    <TextView
+                        android:id="@+id/ret_stwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/outline"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:visibility="gone"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorPrimary"/>
+                    <TextView
+                        android:id="@+id/ret_sthree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/outline"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:visibility="gone"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <TextView
+                        android:id="@+id/ret_sfour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/outline"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:visibility="gone"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <TextView
+                        android:id="@+id/ret_sfive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/outline"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:visibility="gone"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <TextView
+                        android:id="@+id/ret_ssix"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/outline"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:visibility="gone"
+                        android:layout_marginEnd="20dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorPrimary"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cv10"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            app:cardBackgroundColor="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/rt10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:fontFamily="@font/actor"
+                android:text="Other Informations" />
+
+            <View
+                android:id="@+id/viewss10"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/rt10"
+                android:layout_marginBottom="5dp"
+                android:background="#c2c2c2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:layout_below="@+id/viewss10"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/actor"
+                        android:text="Backlogs"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/back_val"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_marginTop="10dp"
+                        android:text="0"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="#c2c2c2"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/actor"
+                        android:text="Internships"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/intern_val"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="0"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="#c2c2c2"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/actor"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Aptitude"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/apti_val"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="0"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/edit_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cv11"
+                android:layout_margin="20dp"
+                android:text="EDIT MY PROFILE"
+                android:fontFamily="@font/actor"
+                android:background="@drawable/btn_bg"
+                android:textColor="@android:color/white"/>
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

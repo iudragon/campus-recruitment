@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".DetailActivity">
+
+        <include
+            android:id="@+id/details"
+            layout="@layout/custom_toolbar" />
+
+
+        <LinearLayout
+            android:id="@+id/part1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/details"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <EditText
+                    android:id="@+id/first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/outline"
+                    android:hint="First Name"
+                    android:inputType="text"
+                    android:fontFamily="@font/actor"
+                    android:padding="15dp"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/last"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/outline"
+                    android:hint="Last Name"
+                    android:fontFamily="@font/actor"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/usn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/outline"
+                android:hint="University Number"
+                android:inputType="text"
+                android:padding="15dp"
+                android:textColor="@color/colorPrimary" />
+
+            <AutoCompleteTextView
+                android:id="@+id/branch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/outline"
+                android:hint="Choose Your Branch"
+                android:fontFamily="@font/actor"
+                android:inputType="text"
+                android:padding="15dp"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/linkedin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/outline"
+                android:hint="Linked In ID"
+                android:fontFamily="@font/actor"
+                android:padding="15dp"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/outline"
+                android:gravity="top"
+                android:hint="Year of Passout"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/part1"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Key Skills"
+                android:fontFamily="@font/actor"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/skillone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/outline"
+                android:gravity="center"
+                android:fontFamily="@font/actor"
+                android:text="ENTER SKILLS"
+                android:padding="15dp"
+                android:textColor="@color/colorPrimary" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Entered Skills are : "
+                        android:padding="10dp"
+                        android:fontFamily="@font/actor"
+                        android:textSize="16sp"
+                        android:visibility="gone"
+                        android:id="@+id/shareddata"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/s11"
+                        android:fontFamily="@font/actor"
+                        android:visibility="gone"
+                        android:background="@drawable/outline"
+                        android:padding="15dp"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/s21"
+                        android:fontFamily="@font/actor"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/outline"
+                        android:padding="15dp"
+                        android:visibility="gone"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/s31"
+                        android:fontFamily="@font/actor"
+                        android:visibility="gone"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/outline"
+                        android:padding="15dp"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/s41"
+                        android:fontFamily="@font/actor"
+                        android:visibility="gone"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/outline"
+                        android:padding="15dp"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/s51"
+                        android:fontFamily="@font/actor"
+                        android:visibility="gone"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/outline"
+                        android:padding="15dp"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/s61"
+                        android:fontFamily="@font/actor"
+                        android:visibility="gone"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/outline"
+                        android:padding="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/counters"
+                        android:fontFamily="@font/actor"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!--
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="vertical">
+
+                           <AutoCompleteTextView
+                               android:id="@+id/skillone"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:layout_margin="5dp"
+                               android:background="@drawable/outline"
+                               android:gravity="center"
+                               android:hint="Skill 1"
+                               android:padding="15dp"
+                               android:textColor="@color/colorPrimary" />
+
+                           <AutoCompleteTextView
+                               android:id="@+id/skilltwo"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:layout_margin="5dp"
+                               android:background="@drawable/outline"
+                               android:gravity="center"
+                               android:hint="Skill 2"
+                               android:padding="15dp"
+                               android:textColor="@color/colorPrimary" />
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="vertical">
+
+                           <AutoCompleteTextView
+                               android:id="@+id/skillthree"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:layout_margin="5dp"
+                               android:background="@drawable/outline"
+                               android:gravity="center"
+                               android:hint="Skill 3"
+                               android:padding="15dp"
+                               android:textColor="@color/colorPrimary" />
+
+                           <AutoCompleteTextView
+                               android:id="@+id/skillfour"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:layout_margin="5dp"
+                               android:background="@drawable/outline"
+                               android:gravity="center"
+                               android:hint="Skill 4"
+                               android:padding="15dp"
+                               android:textColor="@color/colorPrimary" />
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="vertical">
+
+                           <AutoCompleteTextView
+                               android:id="@+id/skillfive"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:layout_margin="5dp"
+                               android:background="@drawable/outline"
+                               android:gravity="center"
+                               android:hint="Skill 5"
+                               android:padding="15dp"
+                               android:textColor="@color/colorPrimary" />
+
+                           <AutoCompleteTextView
+                               android:id="@+id/skillsix"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:layout_margin="5dp"
+                               android:background="@drawable/outline"
+                               android:gravity="center"
+                               android:hint="Skill 6"
+                               android:padding="15dp"
+                               android:textColor="@color/colorPrimary" />
+                       </LinearLayout>
+                       -->
+
+            <EditText
+                android:id="@+id/be"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/outline"
+                android:hint="B.E Aggregate"
+                android:inputType="text"
+                android:maxLength="2"
+                android:padding="15dp"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/puc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/outline"
+                android:hint="12th/PUC Percentage"
+                android:inputType="text"
+                android:maxLength="2"
+                android:padding="15dp"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/sslc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/outline"
+                android:hint="SSLC Percentage"
+                android:inputType="text"
+                android:maxLength="2"
+                android:padding="15dp"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/enter_backs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/outline"
+                android:hint="Number of backlogs at present"
+                android:inputType="text"
+                android:maxLength="2"
+                android:padding="15dp"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/enter_interns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/outline"
+                android:hint="Number of internships"
+                android:inputType="text"
+                android:maxLength="1"
+                android:padding="15dp"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/enter_apti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/outline"
+                android:hint="How good are you at aptitude [1 - 10]"
+                android:inputType="text"
+                android:maxLength="1"
+                android:padding="15dp"
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/det_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="SUBMIT"
+                android:fontFamily="@font/actor"
+                android:background="@drawable/btn_bg"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/white">
+
+        <RelativeLayout
+            android:id="@+id/rell1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/rec_image"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/defp" />
+
+
+            <TextView
+                android:id="@+id/rec_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/rec_image"
+                android:text="Username"
+                android:fontFamily="@font/actor"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rec_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rec_name"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/rec_image"
+                android:text="21/06/2018  12:30 PM"
+                android:textColor="#c2c2c2"
+                android:textSize="13sp" />
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/rec_time"
+                android:layout_marginTop="15dp"
+                android:background="#c2c2c2" />
+
+            <ImageButton
+                android:id="@+id/edit_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rec_name"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/rec_time"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_edit_24dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/rec_exp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rec_image"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/actor"
+                android:padding="10dp"
+                android:gravity="start"
+                android:text="Lorem Ipsum.This is lorem ipsum and it was a lorem ipsum and i hope it will be lorem ipsum."
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/rec_sal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rec_accept"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="6dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_account_balance_wallet_black_24dp"
+                android:text="1.00 lpa - 2.00 lpa"
+                android:textColor="@android:color/black"
+                android:textSize="13sp" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/rec_sal"
+                android:layout_marginTop="8dp"
+                android:background="#c2c2c2" />
+
+            <LinearLayout
+                android:id="@+id/lnc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view2"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/like"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_favorite_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/like_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@+id/like"
+                        android:text="0 Likes"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+               <!-- <LinearLayout
+                    android:id="@+id/comment_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/comment"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_comment_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/comments_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@+id/comment"
+                        android:text="0 Comments"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp" />
+                </LinearLayout>-->
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/lnc"
+                android:layout_marginTop="8dp"
+                android:background="#c2c2c2" />
+
+            <TextView
+                android:id="@+id/rec_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rec_exp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_business_black_24dp"
+                android:text="Yellow Messenger"
+                android:fontFamily="@font/actor"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/rec_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rec_company"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="6dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_business_center_black_24dp"
+                android:text="Accepted Offer"
+                android:fontFamily="@font/actor"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:cardBackgroundColor="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/rec_image1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/defp" />
+
+            <TextView
+                android:id="@+id/rec_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/rec_image1"
+                android:text="Username"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rec_time1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rec_name1"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/rec_image1"
+                android:text="21/06/2018  12:30 PM"
+                android:textColor="#c2c2c2"
+                android:textSize="11sp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/rec_time1"
+                android:layout_marginTop="15dp"
+                android:background="#c2c2c2" />
+
+            <TextView
+                android:id="@+id/rec_exp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rec_image1"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Lorem Ipsum.This is lorem ipsum and it was a lorem ipsum and i hope it will be lorem ipsum."
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/lly1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rec_exp1"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/rec_color1"
+                    android:layout_width="35dp"
+                    android:layout_height="15dp"
+                    android:background="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/rec_accept1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Accepted Offer"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lly2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rec_exp1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/lly1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/rec_color2"
+                    android:layout_width="35dp"
+                    android:layout_height="15dp"
+                    android:background="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/rec_accept2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Yellow Messenger"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

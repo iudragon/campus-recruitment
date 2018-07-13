@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Prediction">
+    <include layout="@layout/custom_toolbar"
+        android:id="@+id/pred_tool"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 1"
+        android:id="@+id/question1"
+        android:layout_below="@+id/pred_tool"
+        android:textSize="15sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2.5"
+        android:id="@+id/ll1"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/question1"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/marks1"
+        android:layout_weight="1"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimary"
+        android:text="Your SSLC Percentage"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="XX.X"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/m1"
+        android:background="@drawable/outline"
+        android:layout_weight="1"
+        android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="15dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 2"
+        android:id="@+id/question2"
+        android:layout_below="@+id/ll1"
+        android:textSize="15sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2.5"
+        android:id="@+id/ll2"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/question2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/marks2"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary"
+            android:text="Your PUC Percentage  "/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="XX.X"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:id="@+id/m2"
+            android:gravity="center"
+            android:background="@drawable/outline"
+            android:layout_weight="1"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="15dp"/>
+    </LinearLayout>
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Question 3"
+    android:id="@+id/question3"
+    android:layout_below="@+id/ll2"
+    android:textSize="15sp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2.5"
+        android:id="@+id/ll3"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/question3"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/marks3"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary"
+            android:text="Your Degree Aggregate"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="XX.X"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:id="@+id/m3"
+            android:gravity="center"
+            android:background="@drawable/outline"
+            android:layout_weight="1"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="15dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 4"
+        android:id="@+id/question4"
+        android:layout_below="@+id/ll3"
+        android:textSize="15sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll4"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/question4"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/marks4"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary"
+            android:text="How many Techical Languages do you know?"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex : C , C++, HTML..."
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:id="@+id/m4"
+            android:background="@drawable/outline"
+            android:maxLength="2"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 5"
+        android:id="@+id/question5"
+        android:layout_below="@+id/ll4"
+        android:textSize="15sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll5"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/question5"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/marks5"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary"
+            android:text="Number of Backlogs at present ??"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:id="@+id/m5"
+            android:background="@drawable/outline"
+            android:maxLength="2"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll5"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn1"
+        android:background="@drawable/button_background"
+        android:textColor="@color/colorAccent"
+        android:text="Calculate Chances" />
+
+
+</RelativeLayout>
+</ScrollView>
