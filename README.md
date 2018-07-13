@@ -15,15 +15,15 @@ This was final year project perfomed by 8th sem students of KSSEM in the academi
 → Google Firebase was used in this app, as we wanted reliable, secure, efficient application.<br />
 → We have also focued on Authentication, Database, and Cloud Messaging for push notifications.<br /> <br />
 → Authentication, only a verified candidate can use our app. After the candidate has created an account, we will immediately send a verification id to entered email id, from there they need to verify thier account.<br />
-First, we need to add a dependency in our `gradle:app` file : <br /> <br />
+We need to add a dependency in our `gradle:app` file : <br /> <br />
 `implementation 'com.google.firebase:firebase-auth:16.0.2'` <br />
 
 → Database, was used to store all the details of candidate that was entered in our app. So we made use of Firestore.<br />
-Second, add the Firestore database dependency in our `gradle:app` file : <br /> <br />
+Add the Firestore database dependency in our `gradle:app` file : <br /> <br />
 `compile 'com.google.firebase:firebase-firestore:17.0.2'` <br />
 
-→ Notifications, was used to send the notifications about the placement drives. Like a remainder to the students.
-Third, add the Notifications dependency in our `gradle:app` file : <br /> <br />
+→ Notifications, was used to send the notifications about the placement drives. Like a remainder to the students.<br />
+Add the Notifications dependency in our `gradle:app` file : <br /> <br />
 `implementation 'com.google.firebase:firebase-messaging:17.1.0'` <br />
 
 ![image00](https://user-images.githubusercontent.com/33996847/42688054-6f8c768c-86b8-11e8-9900-2a0be0532a8d.png)
