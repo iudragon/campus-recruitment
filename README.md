@@ -3,7 +3,7 @@
 # Campus Recruitment
 This was final year project perfomed by 8th sem students of KSSEM in the academic year 2017-2018 which comes under VTU. 
 
-# About Project
+## About Project
 
 This project is about letting the candidates know about the companies visiting their colleges and drives they can attend! We collect the information of students like thier marks and skills and calculate their chances of getting placed in a company using one method.
 Students can also view thier seniors or batch mates interview experiences, drives information that they should apply for.
